@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 24px;
 }
 
 .main {
@@ -9,148 +10,77 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+
+.app {
     width: 600px;
-    margin: 30vh auto;
     height: 435px;
     border: 1px solid black;
-    position: relative;
+}
+.app-main {
+    display: flex;
+    justify-content: space-between;
+    height: 375px;
+}
+.app-left {
+    flex-basis: 50%;
+    border-right: 1px solid black;
+}
+.app-right {
+    flex-basis: 50%;
+}
+.form-search {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px 15px;
 }
 
 .input-city {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
-    width: 600px;
-    height: 45px;
-    position: absolute;
-    top: 0;
+    outline: none;
+    border: none;
+    width: 100%;
 }
 
-.city {
-    margin: 0 0 0 16px;
-    color: #696969;
-    font-size: 18px;
-    font-weight: 400;
-    width: 100%;
+.btn-search {
+    cursor: pointer;
+    background: transparent;
     border: none;
     outline: none;
 }
 
-.search-city {
-    margin: 0 10px 0 0;
-    border: none;
-    background-color: white;
+.screen {
+    height: 100%;
+    position: relative;
 }
 
-.weather {
-    border-right: 1px solid black;
-    height: 390px;
+.weather-icon {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-degree {
     position: absolute;
-    top: 44px;
-    left: 303px;
-}
-
-.temperature {
+    left: 10px;
+    top: 0;
     font-size: 70px;
-    font-weight: 400;
-    position: absolute;
-    right: 176px;
-    top: 9px;
 }
-
-.weather-icons {
-    position: absolute;
-    top: 148px;
-    left: -192px;
+.screen-now {
+    padding: 20px;
 }
-
-.city-wrapper {
-    position: absolute;
+.now-bottom {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    width: 267px;
-    top: 290px;
-    right: 18px;
 }
 
-.current-city {
-    font-size: 24px;
-    font-weight: 400;
-    color: black;
-}
-
-.like-city {
-    border: none;
-    background-color: white;
-}
-
-.locations {
+.locations-title {
+    padding: 30px 0 5px 15px;
     border-bottom: 1px solid black;
-    width: 294px;
-    position: absolute;
-    top: 100px;
-    right: 0;
 }
-
-.added-locations {
-    font-weight: 400;
-    font-size: 24px;
-    position: absolute;
-    top: -37px;
-    left: 15px;
-}
-
-.city-list {
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    right: 165px;
-    top: 10px;
-}
-
-.city-list li {
-    padding-top: 10px;
-}
-
-.tabs-content {
-    overflow: hidden;
-}
-
-li {
-    list-style: none;
-}
-
-.tabs-buttons {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    top: 388px;
-    left: 0;
-    border-top: 1px solid black;
-}
-
-.btn {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 45px;
-    width: 101px;
-}
-
-.btn:hover {
-    background-color: black;
-    color: white;
-}
-
-.btn-details {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+.locations-list {
+    display: block;
+    margin-top: 35px !important;
+    margin-left: 15px !important;
 }

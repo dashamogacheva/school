@@ -9,72 +9,50 @@
 <body>
 
 <div class="main">
-    <form class="input-city">
-        <input class="city" placeholder="Aktobe">
-        <button type="submit" class="search-city">
-            <img src="./picture/search.svg" alt="search">
-        </button>
-    </form>
-    <div class="tabs-content">
-        <ul>
-            <li id="now">
-                <div class="weather">
-                    <div class="current-city-weather">
-                        <p class="temperature">14°</p>
-                        <div class="weather-icons">
-                            <img src="./picture/weather-icons.svg" alt="weather-icons">
-                        </div>
-                        <div class="city-wrapper">
-                            <p class="current-city">Aktobe</p>
-                            <button class="like-city">
-                                <img src="./picture/like.svg" alt="like">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </li>
+   <div class="app">
+       <div class="app-header">
+           <form class="form-search">
+               <input class="input-city" placeholder="City" />
+               <button type="submit" class="btn-search">
+                   <img src="assets/icons/search.svg" alt="search">
+               </button>
+           </form>
+       </div>
+       <div class="app-main">
+          <div class="app-left">
+              <div class="screen screen-now">
+                  <div class="weather-info">
+                      <div class="weather-degree">
+                          14°
+                      </div>
+                      <div class="weather-icon">
+                          <img src="./assets/icons/weather-icons.svg" alt="weather icon">
+                      </div>
+                      <div class="now-bottom">
+                          <span class="city">Aktobe</span>
+                          <img src="./assets/icons/like.svg" alt="like icon">
+                      </div>
+                  </div>
+              </div>
+              <div class="tabs">
 
-            <li id="details">
-
-
-            </li>
-
-            <li id="forecast">
-
-
-            </li>
-
-        </ul>
-    </div>
-
-    <ul class="tabs-buttons">
-        <li class="btn btn-now">
-            Now
-        </li>
-        <li class="btn btn-details">
-            Details
-        </li>
-        <li class="btn btn-forecast">
-            Forecast
-        </li>
-    </ul>
-
-
-    <div class="locations">
-        <p class="added-locations">Added Locations:</p>
-        <ul class="city-list">
-            <li>Amur</li>
-            <li>Samara</li>
-            <li>Bali</li>
-            <li>Dane</li>
-            <li>Kilo</li>
-            <li>Nur-Sultan</li>
-        </ul>
-    </div>
-
-
+              </div>
+          </div>
+           <div class="app-right">
+               <div class="locations-title">
+                   Added Locations:
+               </div>
+               <ul class="locations-list">
+                   <li class="location-item">Amur</li>
+                   <li class="location-item">Samara</li>
+                   <li class="location-item">Bali</li>
+                   <li class="location-item">Dane</li>
+                   <li class="location-item">Kilo</li>
+                   <li class="location-item">Nur-Sultan</li>
+               </ul>
+           </div>
+       </div>
+   </div>
 </div>
-
-
 </body>
 </html>
